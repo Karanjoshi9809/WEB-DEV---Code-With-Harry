@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 15 : CSS Selectors</title>
+
+    <style>
+        /* element selector */
+        p {
+            color: cadetblue;
+        }
+
+        /* id selector */
+        #secondPara {
+            color: red;
+        }
+
+        /* class selector */
+        .blueElement {
+            color: blue;
+        }
+
+        .bgDarkgray {
+            background-color: darkgray;
+        }
+
+        /* grouping selectors */
+        footer,
+        span {
+            color: yellowgreen;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <br>
+    <p>This is a sample paragraph to demonstrate CSS Selectors</p>
+    <p class="blueElement bgDarkgray">This is a sample paragraph to demonstrate CSS Selectors and this is styled by
+        class selector</p>
+    <p id="secondPara">This is a sample paragraph to demonstrate CSS Selectors and this is styled by id selector</p>
+    <div>
+        <span>This is a span</span>
+        <p>This is a sample paragraph which is in &lt;div&gt; tag to demonstrate CSS Selectors</p>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+
+</html>

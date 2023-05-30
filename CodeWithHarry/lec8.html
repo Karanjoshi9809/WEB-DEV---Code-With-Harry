@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 8 : Forms and input tags</title>
+</head>
+
+<body>
+    <h2>### THIS IS HTML FORM and INPUT tags TUTORIAL ###</h2>
+    <br>
+    <h4>     HTML Form with all input almost tags    </h4>
+    <form action="backend.php">
+        <!-- the following is the example of input tags and we formated it using <br> tag but that is not recommended because we can achieve it using <div> tag. -->
+        <!-- Name : <input type="text"> <br> <br> -->
+        <!-- Role : <input type="text"> <br> <br>  -->
+
+        <!-- the following is the <div> tag example and even in it we used <br> but only for beauty means padding...etc but that also we can do with CSS easily -->
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role : </label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Birth Date : </label>
+            <input type="date" name="myBirthDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="mobileNo">Mobile No : </label>
+            <input type="number" name="myMobileNo" id="mobileNo">
+        </div>
+        <br>
+        <div>
+            <label for="dateCheck">Are you above 18 ? </label>
+            <input type="checkbox" name="myAgeChecker" id="dateCheck">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender : </label>
+            Male <input type="radio" name="myGender" id="gender"> Female <input type="radio" name="myGender" id="gender"> Other <input
+                type="radio" name="myGender" id="gender">
+        </div>
+        <br>
+        <div>
+            <label for="ageDocument">Upload age document : </label>
+            <select name="myDocument" id="ageDocument">
+                <option value="adh">Aadhar Card</option>
+                <option value="dl">Driving Licence</option>
+                <option value="pancard">Pancard</option>
+            </select>
+            <input type="file" name="myDocument" id="ageDocument"> 
+        </div>
+        <br>
+        <div>
+            <label for="button">Button : </label> 
+            <input type="button" value="myButton" id="button">
+        </div>
+        <br>
+        <div>
+            <label for="color">Select color : </label> 
+            <input type="color" name="myColor" id="color">
+        </div>
+        <br>
+        <div>
+            <label for="hidden">Hidden input : </label> 
+            <input type="hidden" name="" id="hidden"> 
+        </div>
+        <br>
+        <div>
+            <label for="image">Image : </label> 
+            <input type="image" src="Karan.jpeg" alt="No image" width="100" height="100" id="image"> 
+        </div>
+        <br>
+        <div>
+            <label for="month">Month selector :</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password : </label> 
+            <input type="password" name="myPassword" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="range">Range : </label> 
+            <input type="range" name="myRange" min="1" max="10" step="1" id="range">
+        </div>
+        <br>
+        <div>
+            <label for="search">Search field : </label> 
+            <input type="search" name="mySearch" id="search">
+        </div>
+        <br>
+        <div>
+            <label for="tel">tel :</label> 
+            <input type="tel" name="myTel" id="tel">
+        </div>
+        <br>
+        <div>
+            <label for="time">Time : </label> 
+            <input type="time" name="myTime" id="time"> 
+        </div>
+        <br>
+        <div>
+            <label for="url">URL : </label>
+            <input type="url" name="myUrl" id="url">
+        </div>
+        <br>
+        <div>
+            <label for="week">Week : </label>
+            <input type="week" name="myWeek" id="week">
+        </div>
+        <br>
+        <div>   
+            <label for="aboutYourself">Write about yourself : </label>
+            <textarea name="myText" cols="90" rows="10" id="aboutYourself"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+
+</html>
