@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 23 : Navigation menu with CSS</title>
+
+    <style>
+        .navBar{
+            background-color: darkslategray;
+            border-radius: 30px;
+        }
+        .navBar ul{
+            overflow: auto;
+        }
+        .navBar li{
+            float: left;
+            list-style: none;
+            padding: 8px 12px;
+            margin: 6px 8px;
+        }
+        .navBar li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navBar li a:hover{
+            color:coral;
+        }
+        .search{
+            float: right;
+            margin: 11px 18px;
+            padding: 2px 2px;
+        }
+        .navBar input{
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Navigation menu</h2>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Services</a></li>
+                <li> <a href="">Contact us</a></li>
+                <div>
+                    <input type="search" class="search" name="searchBox" id="search" placeholder="search in this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

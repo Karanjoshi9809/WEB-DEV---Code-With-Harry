@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 20 : CSS Box model, Margin and Padding</title>
+    <style>
+        /* *{} is a universal selector which implemets to all elements. */
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;;
+        }
+        body{
+            background-color: tomato;
+        }
+        .container{
+            background-color: aquamarine;
+            border: 4px solid black;
+            /* we can set margin/padding like following */
+            /* 1st way */
+            /* padding: 32px;
+            margin: 22px; */
+            /* 2nd way */
+            /* padding-top: 32px;
+            padding-right: 32px;
+            padding-bottom: 32px;
+            padding-left: 32px; */
+            /* 3rd way */
+            /* padding: 12px 22px 32px 42px; */
+            /* 4th way */
+            /* padding: 35px 70px; */
+            padding: 35px 70px; 
+            margin: 35px 70px;
+            border-radius: 25px;
+            width: 575px;
+        }
+        h2{
+            background-color: yellow;
+            border: 3px solid black;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #firstPara{
+            color: teal;
+        }
+        #secondPara{
+            color: teal;
+        }
+        #thirdPara{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Box model, Margin and Padding</h2>
+    <div class="container">
+        <h3>First heading</h3>
+        <p id="firstPara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate quis reiciendis nulla voluptatem, ad deserunt ipsa placeat amet vel, ratione delectus, iste quae. Ipsum eius temporibus aliquam? Autem quam quo odit illum in error quas omnis quidem amet perspiciatis!</p>
+    </div>
+
+    <div class="container">
+        <h3>Second heading</h3>
+        <p id="secondPara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate quis reiciendis nulla voluptatem, ad deserunt ipsa placeat amet vel, ratione delectus, iste quae. Ipsum eius temporibus aliquam? Autem quam quo odit illum in error quas omnis quidem amet perspiciatis!</p>
+    </div>
+    
+    <div class="container">
+        <h3>Third heading</h3>
+        <p id="thirdPara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate quis reiciendis nulla voluptatem, ad deserunt ipsa placeat amet vel, ratione delectus, iste quae. Ipsum eius temporibus aliquam? Autem quam quo odit illum in error quas omnis quidem amet perspiciatis!</p>
+    </div>
+</body>
+</html>

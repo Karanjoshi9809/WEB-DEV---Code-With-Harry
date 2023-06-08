@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 19 : CSS background, border, height and width</title>
+
+    <style>
+        #firstPara {
+            background-color: aquamarine;
+            height: 60px;
+            width: 450px;
+            border: 5px solid coral;
+            /* below 3 lines are does samething as above line  */
+            /* border-width: 5px;
+            border-style: solid;
+            border-color: coral; */
+            border-radius: 60px;
+            text-align: center;
+        }
+
+        #secondPara {
+            color: rebeccapurple;
+            background-color: gold;
+            height: 60px;
+            width: 450px;
+            border-top: 5px solid black;
+            border-left: 5px dotted blue;
+            border-right: 5px dashed gray;
+            border-bottom: 5px groove rebeccapurple;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 60px;
+            text-align: center;
+        }
+
+        #thirdPara {
+            height: 300px;
+            width: 450px;
+            border: 5px solid black;
+            border-radius: 70px;
+            background-color: violet;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHXm7Povx_Lt4ORZD3xUZiWEdP676SuD6Vg&usqp=CAU');
+            /* if image is small and repeating then we can use  */
+            /* background-repeat: repeat-x || repeat-y || no-repeat; */
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS height, width, border and background tutorial</h3>
+    <p id="firstPara">This is a sample paragraph to learn.</p>
+    <p id="secondPara">This is also a paragraph but another. </p>
+    <p id="thirdPara">This is my third paragraph.</p>
+</body>
+
+</html>

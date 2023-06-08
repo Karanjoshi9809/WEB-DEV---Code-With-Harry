@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Puddles&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Lecture 21 : CSS Float & Clear</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            width: 900px;
+            background-color: aqua;
+            border: 4px solid black;
+            margin: 15px auto;
+        }
+        .item{
+            border: 2px solid black;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: bisque;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            clear: left;
+            /* float: left; */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Float & Clear</h2>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio itaque! Nostrum at asperiores quam fugit, quod reprehenderit debitis nobis maxime porro aliquam accusamus odio vitae molestias mollitia consequatur dolore.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer Items</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vero nisi cupiditate beatae assumenda voluptate, rem deleniti totam magnam aperiam facilis pariatur a. Id quod laboriosam aperiam dolore vero commodi. Labore quibusdam reiciendis nam ducimus nobis laudantium nesciunt, ipsam perspiciatis.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary Items</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus totam molestias illum quaerat aspernatur magnam facere quisquam ea cum necessitatibus inventore temporibus veniam eum architecto, quod quia, voluptatum laudantium non tenetur sed repellat amet explicabo accusamus? Dignissimos laborum velit tenetur minima saepe quas, nesciunt excepturi.</p>
+        </div>
+    </div>
+</body>
+</html>
