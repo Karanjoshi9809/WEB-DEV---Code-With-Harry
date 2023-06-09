@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutch's Best Gym</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+        /* css reset  */
+        body{
+            margin: 0px;
+            padding: 0px;
+            height: 1000px;
+            background: url("img/bg.jpg");
+            color: white;
+            font-family: 'Arvo', serif;
+        }
+        .left{
+            display: inline-block;
+            /* border: 4px solid red; */
+            top: 20px;
+            left: 64px;
+            position: absolute; 
+        }
+        .left img{
+            padding: 0px 20px;
+            width: 60px;
+            height: 50px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        
+        .mid{
+            display: block;
+            width: 600px;
+            margin: 20px auto;
+            /* border: 4px solid blueviolet; */
+        }
+        .navBar{
+            display: inline-block;
+        }
+        .navBar li{
+            display: inline-block;
+            /* text-align: left; */
+        }
+        .navBar li a{
+            color: white;
+            text-decoration: none;
+            padding: 4px 15px;
+        }
+        .navBar li a:hover, .navBar li a.active{
+            text-decoration: underline;
+            color: rgb(198, 189, 189);
+        }
+
+        .right{
+            display: inline-block;
+            /* border: 4px solid yellow; */
+            top: 32px;
+            right: 15px;
+            position: absolute;
+        }
+        .btn{
+            margin: 0px 9px;
+            padding: 4px 14px;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Arvo', serif;
+        }
+        .btn:hover{
+            color: black;
+            background-color: rgb(231, 219, 219);
+        }
+        
+        .container{
+            border: 2px solid white;
+            margin: 60px 85px;
+            padding: 35px 25px;
+            width: 35%;
+            border-radius: 12px;
+        }
+        
+        .container h2{
+            text-align: center;
+            font-family: 'Arvo', serif;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 316px;    
+            padding: 6px;
+            margin: 3px auto;
+            border: 2px solid gainsboro;
+            border-radius: 3px;
+            font-family: 'Arvo', serif;
+        } 
+        .container button{
+            display: block;
+            width: 78%;
+            margin: 20px auto;
+        }
+        </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo and name -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Ten 11 Fitness</div>
+        </div>
+        
+        <!-- mid box for navbar -->
+        <div class="mid">
+                <ul class="navBar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">E-mail us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Kutch now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="yourName" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="yourEmail" id="mail" placeholder="Ente your e-mail">
+            </div>
+            <div class="form-group">
+                <input type="number" name="yourNumber" id="number" placeholder="Enter your contact number">
+            </div>
+            <div class="form-group">
+                <input type="number" name="yourAge" id="age" placeholder="Enter your age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
