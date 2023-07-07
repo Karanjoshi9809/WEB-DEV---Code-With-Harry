@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 34 : CSS Box shadow and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 13px;
+            margin: 23px 13px;
+            /* border: 2px solid black; */
+            background-color: cyan;
+
+            /* syntax of box-shadow */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: inset x y blur-radius spread-radius color; */
+
+            /* for bottom-right side shadow */
+            box-shadow: 10px 12px green;
+            /* for top-left side shadow */
+            box-shadow: -10px -12px green;
+            /* shadow with blur radius */
+            box-shadow: 10px 8px 12px green;
+            /* shadow with blur radius + spread radius */
+            box-shadow: 10px 8px 12px 5px rgba(18, 185, 93, 0.5);
+
+            box-shadow: inset -10px -8px 5px rgba(18, 185, 93, 0.5);
+        }
+        .card h1{
+            text-shadow: 2px 3px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+        <h1>C++ Course</h1>
+        <p>We have started C++ course that doesn't mean we're not gonna complete this course. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequuntur laboriosam iste unde quibusdam eius corrupti quos libero, quia dolores provident culpa ducimus repellendus? Quasi delectus non atque commodi aliquam repellendus vitae cumque, incidunt numquam!</p>    
+        </div>
+        <div class="card" id="card2">
+        <h1>HTML Course</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequuntur laboriosam iste unde quibusdam eius corrupti quos libero, quia dolores provident culpa ducimus repellendus? Quasi delectus non atque commodi aliquam repellendus vitae cumque, incidunt numquam!</p>    
+        </div>
+        <div class="card" id="card3">
+        <h1>Python Course</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequuntur laboriosam iste unde quibusdam eius corrupti quos libero, quia dolores provident culpa ducimus repellendus? Quasi delectus non atque commodi aliquam repellendus vitae cumque, incidunt numquam!</p>            
+    </div>
+    </div>
+</body>
+</html>

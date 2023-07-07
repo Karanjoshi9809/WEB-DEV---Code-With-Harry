@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 35 : CSS variables and custom properties</title>
+    <style>
+        :root{
+            --primary-color: violet;
+            --danger-color: black;
+            --maxw: 400px;
+            --maxh: 300px;
+        }
+        .container{
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--danger-color);
+
+        }
+        .box{
+            --box-color: blue; 
+            margin: 12px 9px;
+            padding: 12px 9px;
+            width: var(--maxw);
+            height: var(--maxh);
+            border: 3px solid var(--danger-color);
+            background-color: var(--primary-color);
+            box-shadow: 3px 5px 4px var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur harum, quas sequi necessitatibus alias autem, laborum debitis aperiam porro velit deleniti ut vitae natus tempora quia hic! Voluptate vitae obcaecati dolore? Doloribus, suscipit.</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur harum, quas sequi necessitatibus alias autem, laborum debitis aperiam porro velit deleniti ut vitae natus tempora quia hic! Voluptate vitae obcaecati dolore? Doloribus, suscipit.</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur harum, quas sequi necessitatibus alias autem, laborum debitis aperiam porro velit deleniti ut vitae natus tempora quia hic! Voluptate vitae obcaecati dolore? Doloribus, suscipit.</p>
+        </div>
+    </div>
+</body>
+</html>

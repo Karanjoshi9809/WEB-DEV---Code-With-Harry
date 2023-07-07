@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 32 : Attribute and nth child pseudo selectors</title>
+
+    <style>
+        .container{
+            display: block;
+            width: 200px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        /* psuedo selector for input tag whose input type is text */
+        input[type="text"]{
+            padding: 8px;
+            margin: 8px 0px;
+            border: 3px solid salmon;
+            background-color: aqua;
+            color: black;
+            border-radius: 15px;
+        }
+        /* pseudo attribute selector for anchor tag whose target is set */
+        a[target]{
+            color: aquamarine;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* pseudo attribute selector for anchor tag whose target is set to "_self" */
+        a[target="_self"]{
+            color: seagreen;
+            font-size: 34px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* nth-child pseudo selectors */
+        li:nth-child(4){
+            color: yellowgreen;
+            border: 2px solid coral;
+            border-radius: 10px;
+            text-align: center;
+        }
+        /* for child with custom selection where n={1, 2, 3,....} */
+        li:nth-child(2n+0){
+            color: tomato;
+        }
+        /* for odd child */
+        li:nth-child(odd){
+            background-color: yellow;
+            color: black;
+        }
+        /* for even child  */
+        li:nth-child(even){
+            background-color: yellowgreen;
+            color: red;
+        }
+        li:nth-child(3n+2){
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>CSS attribute and nth child pseudo selectors</h3>
+    <hr>
+    <div class="container">
+        <h2><a href="http://www.google.com" target="_blank">Go to google</a></h2>
+        <h2><a href="http://www.facebook.com" target="_self">Go to facebook</a></h2>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+            <li class="item" id="item-6">Item 6</li>
+            <li class="item" id="item-7">Item 7</li>
+            <li class="item" id="item-8">Item 8</li>
+            <li class="item" id="item-9">Item 9</li>
+            <li class="item" id="item-10">Item 10</li>
+            <li class="item" id="item-11">Item 11</li>
+            <li class="item" id="item-12">Item 12</1i>
+            <li class="item" id="item-13">Item 13</1i>
+            <li class="item" id="item-14">Item 14</li>
+        </ul>
+    </div>
+</body>
+</html>

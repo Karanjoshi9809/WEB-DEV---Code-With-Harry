@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 31 : More on CSS selectors</title>
+
+    <style>
+        h2{
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+        }
+        /* selector for p in all div */
+        div p{
+            color: tomato;
+            font-weight: bold;
+            background-color: yellow;
+        }
+        /* selector for p in li which is in div */
+        div li p{
+            color: white;
+            font-weight: bold;
+            background-color: springgreen;
+        }
+        /* selector for p which is direct in div */
+        div > p{
+            color: black;
+            font-weight: bold;
+            background-color: tomato;
+        } 
+        /* selector for p which is after div means whose last sibling is div */
+        div + p{
+            color: white;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Adavnced CSS selectors</h2>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <p>This is a para</p>
+            <ul>
+                <li>
+                    <p>This is another para in li</p>
+                </li>
+                <li>This wil not affected</li>
+            </ul>
+        </div>
+        <p>This is an another para</p>
+    </div>
+    <p>This is an outermost para</p>
+</body>
+</html>
